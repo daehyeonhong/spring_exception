@@ -17,7 +17,7 @@ public class UserHandlerExceptionResolver implements HandlerExceptionResolver {
 
     private final ObjectMapper objectMapper = new ObjectMapper();
 
-    //@Override
+    @Override
     public ModelAndView resolveException(HttpServletRequest request, HttpServletResponse response, Object handler, Exception exception) {
         try {
             if (exception instanceof UserException) {
